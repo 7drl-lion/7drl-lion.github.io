@@ -1,0 +1,14 @@
+#!/bin/bash
+
+mkdir lyons_den
+mkdir lyons_den/js
+mkdir lyons_den/css
+
+cp README.txt lyons_den
+cp index.html lyons_den
+cp js/main.js lyons_den/js/
+cp css/main.css lyons_den/css/
+cp -R vendor lyons_den/
+
+zip -r lyons_den lyons_den
+rm -rf lyons_den

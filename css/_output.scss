@@ -1,0 +1,19 @@
+#game .output {
+  @extend .section;
+  @extend .bottombar;
+
+  border-top: 1px solid $fg_color;
+  width: $game_width - $sidebar_width;
+  bottom: 0px;
+
+  .content {
+    height: 82px;
+    overflow: auto;
+    padding: 0px;
+    width: 700px;
+
+    .entry {
+      padding-left: $wpadding;
+    }
+  }
+}

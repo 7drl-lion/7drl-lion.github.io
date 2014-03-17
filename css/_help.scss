@@ -1,0 +1,10 @@
+#game .help {
+  @extend .section;
+  @extend .sidebar;
+
+  border-left: 1px solid $fg_color;
+  border-top: 1px solid $fg_color;
+  height: $help_height;
+  bottom: 0px;
+  right: 0px;
+}

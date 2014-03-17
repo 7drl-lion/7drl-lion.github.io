@@ -1,0 +1,3 @@
+#!/bin/bash
+
+fswatch js "cake build"

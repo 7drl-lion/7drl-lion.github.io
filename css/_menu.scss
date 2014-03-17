@@ -1,0 +1,32 @@
+#game .menu {
+  $w: 200;
+  $h: $game_height - 200;
+
+  border: 1px solid $fg_color;
+  background-color: $bg_color;
+  @include dim($w, $h);
+  @include center($w, $h, $game_width, $game_height);
+  z-index: 100;
+
+  .title {
+    border-bottom: 1px solid $fg_color;
+    background-color: $bg_hi_color;
+    color: $fg_hi_color;
+    @include padding();
+  }
+
+  .content {
+    @include padding();
+
+    .option {
+    }
+  }
+}
+
+#game .overlay {
+  @include dim($game_width, $game_height);
+  background-color: $bg_hi_color;
+  @include hp-opacity(0.3);
+  position: absolute;
+  z-index: 99;
+}

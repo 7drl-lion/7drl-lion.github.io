@@ -1,0 +1,18 @@
+#game .skills {
+  @extend .section;
+  @extend .sidebar;
+
+  border-top: 1px solid $fg_color;
+  border-left: 1px solid $fg_color;
+  height: $skills_height;
+  top: $status_height;
+  right: 0px;
+
+  .invalid {
+    color: #FF6600;
+  }
+
+  .disabled {
+    color: $bg_hi_color;
+  }
+}

@@ -1,0 +1,11 @@
+#game .map {
+  @extend .section;
+
+  @include dim($game_width - 200, $game_height - 100);
+  top: 0px;
+  left: 0px;
+}
+
+#map {
+  text-align: center;
+}

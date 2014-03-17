@@ -1,0 +1,56 @@
+$game_width: 920px;
+$game_height: 470px;
+
+$sidebar_width: 220px;
+$bottombar_height: 127px;
+
+$status_height: 118px;
+$skills_height: 150px;
+$help_height: $game_height - $status_height - $skills_height;
+
+#game {
+  background-color: $bg_color;
+  border: 1px solid $fg_color;
+  font-family: $font_stack;
+  font-size: 10px;
+  color: $fg_color;
+  height: $game_height;
+  overflow: hidden;
+  position: relative;
+  width: $game_width;
+
+  a {
+    color: $fg_color;
+  }
+  a:hover {
+    color: $fg_hi_color;
+  }
+
+  .sidebar {
+    width: $sidebar_width;
+  }
+
+  .bottombar {
+    height: $bottombar_height;
+  }
+
+  .section {
+    overflow: hidden;
+    position: absolute;
+
+    .title {
+      background-color: $bg_hi_color;
+      color: $fg_hi_color;
+      @include padding();
+      border-bottom: 1px solid $fg_color;
+    }
+
+    .content {
+      @include padding();
+
+      b {
+        color: $fg_hi_color;
+      }
+    }
+  }
+}
